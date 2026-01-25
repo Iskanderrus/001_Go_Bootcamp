@@ -10,5 +10,5 @@ func main() {
 	msg := os.Args[1]
 	l := len(msg)
 
-	fmt.Println(strings.ToUpper(msg) + strings.Repeat("!", l))
+	fmt.Println(strings.Repeat("!", l) + strings.ToUpper(msg) + strings.Repeat("!", l))
 }
