@@ -3,9 +3,13 @@ package main
 import "fmt"
 
 func main() {
-	score, valid := 5, true
+	score, valid := 2, true
 
 	if score > 3 && valid {
-		fmt.Printf("Good!\n")
+		fmt.Println("Good!")
+	} else if score < 3 && valid {
+		fmt.Println("Average!")
+	} else {
+		fmt.Println("Not good enough!")
 	}
 }
