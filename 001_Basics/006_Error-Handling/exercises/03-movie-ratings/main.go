@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"os"
 	"strconv"
-	"strings"
 )
 
 // ---------------------------------------------------------
@@ -64,11 +63,9 @@ func main() {
 	if err != nil {
 		fmt.Printf("error: %q is not a number.\n", age)
 		return
-	} else if strings.HasPrefix(age, "-") {
+	}
+	if n < 0 {
 		fmt.Printf("Wrong age: %q\n", age)
-		return
-	} else if n < 0 {
-		fmt.Printf("error: %q is not a positive number.\n", age)
 		return
 	} else if n > 17 {
 		fmt.Println("R-Rated")
