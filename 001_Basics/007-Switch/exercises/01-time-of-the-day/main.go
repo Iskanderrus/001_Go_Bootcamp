@@ -6,15 +6,14 @@ import (
 )
 
 func main() {
-	now := time.Now()
 
-	switch now.Hour() {
-	case 6, 7, 8, 9, 10, 11:
-		fmt.Println("Good morning!")
-	case 12, 13, 14, 15, 16, 17:
-		fmt.Println("Good afternoon!")
-	case 18, 19, 20, 21, 22, 23:
+	switch h := time.Now().Hour(); {
+	case h >= 18:
 		fmt.Println("Good evening!")
+	case h >= 12:
+		fmt.Println("Good afternoon!")
+	case h >= 6:
+		fmt.Println("Good morning!")
 	default:
 		fmt.Println("Good night!")
 	}
