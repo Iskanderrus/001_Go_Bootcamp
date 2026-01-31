@@ -3,3 +3,4 @@ go.mod
 001_Basics/003_Greeter/greeter
 001_Basics/04_Printf Exercises/01_your age/exercise
 001_Basics/04_Printf Exercises/02-print-your-name-and-lastname/exercise
+go.sum
